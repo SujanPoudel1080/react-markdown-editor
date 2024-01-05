@@ -5,8 +5,9 @@ import NewNote from "./components/NewNote";
 function App() {
   return (
     <>
+      <div className="m-8">
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/" element={<h1 className="fontSize.2xl">Home</h1>} />
         <Route path="/new" element={<NewNote />} />
         <Route path="*" element={<Navigate to="/" />} />
         <Route path="/:id">
@@ -14,6 +15,7 @@ function App() {
           <Route path="edit" element={<h1>Edit</h1>} />
         </Route>
       </Routes>
+      </div>
     </>
   );
 }

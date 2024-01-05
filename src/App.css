@@ -1,6 +1,4 @@
-*{
-  margin: 0px;
-}
-.page-heading{
-  margin: 8px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
